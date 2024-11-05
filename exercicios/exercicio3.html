@@ -1,0 +1,39 @@
+<html>
+    <body>
+        <script>
+            var n1 = prompt('digite o primeiro numero:')
+
+            var opera = prompt('digite a operação:')
+
+            while (opera != '+' && opera != '-' && opera != '*' && opera != '/' && opera != '**'){
+                alert('informe um sinal válido: ')
+                 opera = prompt('digite a operação:')
+            }
+
+            var n2 = prompt('digite o segundo numero:')
+
+            n1 = parseInt(n1)
+            n2 = parseInt(n2)
+
+            var resultado = 0
+
+            if (opera == '+') {
+                resultado = n1 + n2
+            }
+            else if (opera == '-'){
+                resultado = n1 - n2
+            }
+            else if (opera == '*'){
+                resultado = n1 * n2
+            }
+            else if (opra == '/'){
+                resultado = n1 / n2
+            }
+            else if (opera == '**'){
+                resultado = n1 ** n2
+            }
+
+            alert('O resultado final é: '+ resultado)
+        </script>
+    </body>
+</html>

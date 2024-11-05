@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <style>
+            .box{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+            }
+            .animaesquerda{
+                transition: 1s;
+                margin-left: 90px;
+                margin-top: 80px;
+                background-color: green;
+            }
+        </style>
+        <div class="box"></div>
+    </body>
+    <script>
+        var box = document.querySelectorAll('.box')[0]
+        box.addEventListener('click', ()=>{
+            box.classList.add('animaesquerda')
+            
+        })
+    </script>
+</html>

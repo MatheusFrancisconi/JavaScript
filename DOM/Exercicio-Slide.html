@@ -1,0 +1,49 @@
+<html>
+    <body>
+        <style>
+            .container{
+                position: relative;
+                height: 500px;
+            }
+            .container img{
+                position: absolute;
+                left:0;
+                top:0;
+                width:100%;
+                opacity: 0;
+            }
+            .bullets{
+                text-align: center;
+            }
+            .bullets-single{
+                margin:0 8px;
+                cursor: pointer;
+                display: inline-block;
+                width:20px;
+                height:20px;
+                border-radius:10px;
+                background-color: #ccc;
+            }
+            .active-bullet{
+                background-color: #333;
+            }
+        </style>
+        <div class="container">
+            <img style="opacity: 1;" src="https://picsum.photos/id/327/300/200">
+            <img src="https://picsum.photos/id/238/300/200">
+            <img src="https://picsum.photos/id/339/300/200">
+        </div>
+        <div class="bullets">
+            <div class="bullets-single active-bullet"></div>
+            <div class="bullets-single"></div>
+            <div class="bullets-single"></div>
+        </div>
+        <script>
+            var lastindex = 0
+            var images = document.querySelectorAll(".container img")
+            images.forEach((item, indexedDB)=>{
+                alert('alo')
+            })
+        </script>
+    </body>
+</html>

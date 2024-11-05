@@ -1,0 +1,41 @@
+<html>
+    <body>
+        <style>
+        .conteudo h1 span {
+            font-size: medium;
+            cursor: pointer;
+        }
+        .conteudo p {
+            overflow: hidden;
+            height: 2px;
+            transition: 2s;
+        }
+        .anima{
+            height: 200px !important;
+        }
+        </style>
+        <div class="conteudo">
+            <h1>Titulo do conteudo <span>ver mais</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit asperiores distinctio sit consectetur aspernatur est ab dolor labore nostrum sapiente reiciendis doloribus quasi magni tempora modi, doloremque vitae dolorem autem!Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit asperiores distinctio sit consectetur aspernatur est ab dolor labore nostrum sapiente reiciendis doloribus quasi magni tempora modi, doloremque vitae dolorem autem!Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit asperiores distinctio sit consectetur aspernatur est ab dolor labore nostrum sapiente reiciendis doloribus quasi magni tempora modi, doloremque vitae dolorem autem!</p>
+        </div>
+    </body>
+    <script>
+        var span = document.querySelector('.conteudo span')
+        span.addEventListener('click', function(){
+
+            var conteudo = document.querySelector('.conteudo p')
+
+            if(conteudo.classList.contains('anima')){
+                
+                conteudo.classList.remove('anima')
+                span.innerHTML = 'ver mais'
+                
+            }
+            else{
+                conteudo.classList.add('anima')
+                span.innerHTML = 'ver menos'
+            }
+        })
+        
+    </script>
+</html>

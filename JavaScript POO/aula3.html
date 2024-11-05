@@ -1,0 +1,41 @@
+<html>
+    <body>
+        <script>
+            function Pessoa() {
+                this.nome = 'Matheus',
+                this.idade = 17,
+                this.printNome = function(numero){
+                    alert(numero)
+                }
+                this.returnAnimal = function(animal){
+                    return animal
+                }
+            }
+            var pessoa = new Pessoa()
+            var pessoa_2 = new Pessoa()
+            pessoa_2.nome = 'joao'
+            pessoa.printNome(pessoa_2.nome)
+            
+            function Animal(nome, peso){
+                if (nome == undefined){
+                    nome = 'cachorro'
+                }
+                if (peso == undefined){
+                    peso = '12kg'
+                }
+                this.nome = nome
+                this.peso = peso
+            }
+            /*
+            var animal = new Animal('cachorro', '12kg')
+            var animal2 = new Animal('gato', '17kg')
+            alert(animal.nome)
+            alert(animal2.nome)
+            */
+            var animal = new Animal()
+            alert(animal.nome)
+            alert(animal.peso)
+
+        </script>
+    </body>
+</html>

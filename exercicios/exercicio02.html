@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            var anoNasc = prompt('informe sua data de nascimento:')
+            while(anoNasc > 2024){
+                alert('informe o ano corretamente')
+                var anoNasc = prompt('informe sua data de nascimento:')
+            }
+            var anoAtual = prompt('informe o ano atual:')
+            while(anoAtual > 2024){
+                alert('informe o ano corretamente')
+                var anoAtual = prompt('informe o ano atual:')
+            }
+            var idade = anoAtual - anoNasc
+            console.log('sua idade atual é:',idade)
+            alert('sua idade atual é: '+idade)
+        </script>
+    </body>
+</html>
